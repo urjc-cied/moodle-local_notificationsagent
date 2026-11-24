@@ -195,7 +195,7 @@
                     {{/capabilities.export}}
                     {{#capabilities.assign}}
                         {{# iscontextsite}}
-                            <a data-toggle="modal" data-idtemplate="{{{ id }}}" data-target="#assignTemplateModal" href="#"><i class="fa fa-graduation-cap mr-1"></i>{{#str}}assign, local_notificationsagent{{/str}}</a>
+                            <a data-bs-toggle="modal" data-idtemplate="{{{ id }}}" data-bs-target="#assignTemplateModal" href="#"><i class="fa fa-graduation-cap mr-1"></i>{{#str}}assign, local_notificationsagent{{/str}}</a>
                         {{/ iscontextsite}}
                     {{/capabilities.assign}}
                     {{#capabilities.share}}
@@ -273,7 +273,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h3 class="modal-title font-weight-bold">{{#str}}assignassign, local_notificationsagent{{/str}}<span></span></h3>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -290,7 +290,7 @@
                 {{{ capabilities.force }}}
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-light mb-1 mr-4" data-dismiss="modal">{{#str}}assigncancel, local_notificationsagent{{/str}}</button>
+                <button type="button" class="btn btn-light mb-1 mr-4" data-bs-dismiss="modal">{{#str}}assigncancel, local_notificationsagent{{/str}}</button>
                 <button type="button" id="saveassignTemplateModal" class="btn btn-primary mb-1">{{#str}}assignsave, local_notificationsagent{{/str}}</button>
             </div>
         </div>

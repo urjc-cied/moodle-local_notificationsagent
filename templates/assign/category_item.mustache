@@ -66,7 +66,7 @@
             <input id="checkboxcategory-{{id}}" type="checkbox" class="custom-control-input" data-parent="#category-listing-content-{{parentid}}" data-category="{{id}}">
             <label class="custom-control-label" for="checkboxcategory-{{id}}"></label>
         </div>
-        <div class="d-flex px-0" data-toggle="collapse" data-target="#category-listing-content-{{id}}" aria-controls="category-listing-content-{{id}}">
+        <div class="d-flex px-0" data-bs-toggle="collapse" data-bs-target="#category-listing-content-{{id}}" aria-controls="category-listing-content-{{id}}">
             <div class="categoryname d-flex align-items-center">{{{name}}}<i class="fa fa-angle-down ml-2"></i></div>
         </div>
         <span id="selected-info-{{id}}" class="bg-primary"></span>
@@ -74,7 +74,7 @@
             <span class="course-count text-muted">{{countsubcategoriescourses}}<i class="fa fa-graduation-cap fa-fw ml-2"></i></span>
         </div>
     </div>
-    <ul id="category-listing-content-{{id}}" class="collapse" data-parent="#category-listing-content-{{parentid}}">
+    <ul id="category-listing-content-{{id}}" class="collapse" data-bs-parent="#category-listing-content-{{parentid}}">
         {{#hascourses}}
             <a href="#" id="select-all-{{id}}" data-category="{{id}}" data-forceselected="false">{{#str}}assignselectcourses, local_notificationsagent{{/str}}</a>
         {{/hascourses}}

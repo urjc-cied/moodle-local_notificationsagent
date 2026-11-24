@@ -405,7 +405,7 @@ M.local_notificationsagent.List.prototype.deleteDescendant = function(descendant
 };
 
 // Event to tab click
-document.querySelectorAll('a[data-toggle="tab"]').forEach(function (link) {
+document.querySelectorAll('a[data-bs-toggle="tab"]').forEach(function (link) {
     link.addEventListener('click', function (e) {
         showHideTab(e.target.id);
     });
